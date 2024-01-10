@@ -1,0 +1,115 @@
+.main{
+  position: relative;
+  width: 1920px;
+  height: 2600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:  #09090C;
+}
+.content_header{
+position: relative;
+
+}
+.general_foto{
+  margin-left: 650px;
+  z-index: 2;
+}
+.name_foto{
+  position: absolute;
+  top: 294px;
+  right: 670px;
+  z-index: 1;
+}
+.text_description{
+  position: absolute;
+  display: block;
+  top: 500px;
+  right: 450px;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+.content_header button{
+ 
+  width: 243px;
+  height: 80px;
+  border-radius: 16px;
+  font-size: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.see{
+  position: absolute;
+  color: #fff;
+  top: 650px;
+  right: 930px;
+  background: linear-gradient(90deg, #6A11CB 0%, #2575FC 100%);
+  border: none;
+
+}
+.about_film{
+  position: absolute;
+  color: #fff;
+  top: 650px;
+  right: 670px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.125) 50%, rgba(255, 255, 255, 0.1) 100%);
+  border: none;
+
+
+}
+
+.side_bar_nav{
+ position: absolute;
+  top: 40px;
+  left: 64px;
+  cursor: pointer;
+ 
+}
+
+.side_bar_column{
+  margin-top: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 262px;
+}
+
+.item_cards{
+  width: 398px;
+  height: 653px;
+  border: none;
+}
+.news_film{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 215px;
+  gap: 44px;
+}
+.item_cards a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+
+.card_top_content{
+  margin-top: 220px;
+}
+.title{
+
+  width: 655px;
+  height: 67px;
+  margin-left: 215px;
+}
+
+.top_card{
+  display: flex;
+  margin-left: 215px;
+  gap: 100px;
+  cursor: pointer;
+}
+
+.ite_top_card{
+  width: 559px;
+  height: 597px;
+}
