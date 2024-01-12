@@ -8,6 +8,7 @@ npm run dev
 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ [Главная страница](https://github.com/amirhraj/Cinema/blob/main/Cinema_Front.PNG)
+ [Страница с фильмом](https://github.com/amirhraj/Cinema/blob/main/Cinema_card.PNG)
 
 
