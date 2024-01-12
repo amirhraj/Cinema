@@ -3,14 +3,6 @@ import styles from './page.module.css'
 import image from './picture/image3.png'
 import name from './picture/image 4.png'
 import Link from 'next/link'
-import search from './picture/icon/Box Icons.svg'
-import home from './picture/icon/Buttons TV.svg'
-import video from './picture/icon/Buttons TV2.svg'
-import tv from './picture/icon/Monitor.svg'
-import profile from './picture/icon/profile.svg'
-import logo from './picture/icon/Logo.svg'
-import like from './picture/icon/Like.svg'
-import arrow from './picture/Uparrows.svg'
 import BlueBag from './picture/BlueBug.png'
 import homeGame from './picture/Card.png'
 import FireWorks from './picture/Salut.png'
@@ -19,6 +11,7 @@ import title from './picture/title.png'
 import pity from './picture/Pity.png'
 import red from './picture/red.png'
 import witcher from './picture/witcher.png'
+import Sidebar from './components/Sidebar'
 
 
 
@@ -46,49 +39,27 @@ export default function Home() {
                 <button className={styles.see}>Смотреть</button>
                 <button className={styles.about_film}>О фильме</button>
           </div>
-          <div className={styles.side_bar_nav}>
-            <Image src={logo}></Image>
-              <div className={styles.side_bar_column}>
-               <Link href='/'>
-               <Image src={search}></Image>
-               </Link>   
-               <Link href='/'>
-               <Image src={home}></Image>
-               </Link>  
-               <Link href='/'>
-               <Image src={video}></Image>
-               </Link>   
-               <Link href='/'>
-               <Image src={tv}></Image>
-               </Link>   
-               <Link href='/'>
-               <Image src={like}></Image>
-               </Link>  
-               <Link href='/'>
-               <Image src={profile}></Image>
-               </Link>   
-              </div>
-            <Image src={arrow}></Image>  
-          </div>
+            <Sidebar/>
           <div className={styles.news_film}>
              {/* Здесь должен приходить некий энпойнт с новыми фильмами
              и с помощью массива можно сделать добавление фильмов, так же можно сделать 
              одни элемент Card  и уже его импортировать так как нет энпойнтов делаю так  */}
              
                   <div className={styles.item_cards}>
-                      <Link href='/'><Image className={styles.item_cards} src={BlueBag}></Image>
+                      <Link href="/card" >
+                        <Image className={styles.item_cards} src={BlueBag}></Image>
                         <p>Синий жук</p>
                       </Link>
                     
                   </div>
                   <div className={styles.item_cards}>
-                      <Link href='/'><Image className={styles.item_cards} src={homeGame}></Image>
+                      <Link href="/card"><Image className={styles.item_cards} src={homeGame}></Image>
                       <p>Домашняя игра</p>
                       </Link>
                   
                   </div>
                   <div className={styles.item_cards}>
-                      <Link href='/'><Image className={styles.item_cards} src={FireWorks}></Image>
+                      <Link href='/card'><Image className={styles.item_cards} src={FireWorks}></Image>
                       <p>Салют7</p>
                       </Link>
                   
